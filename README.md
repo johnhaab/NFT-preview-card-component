@@ -10,12 +10,11 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
 
-It has been 1 week since i started learning Frontend development, this is the second challenge and it was super hard for me.
+It has been 1 week since I started learning Frontend development, this is the second challenge and it was super hard for me.
 
 ### Screenshot
 
@@ -28,43 +27,78 @@ It has been 1 week since i started learning Frontend development, this is the se
 
 ## My process
 
-First I started with adding what I need in index.html to get everything working, then I started my styles.css
+First I started with adding what I need in index.html to get everything working, then I started my styles.css. I had a lot of trouble on this and had to do a lot of research. I was unsure on a lot of things and it took forever, my biggest issue was the hover state on the main image I had to watch a youtube video to get it right and im still tryng to understand the process to it.
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - CSS custom properties
 
 ### What I learned
 
-I learned how to get a group of items and center it, I was unsure of how to do that prior to this but I can now say I understand it a lot more.
+I leanred how to use opacity that changes on a hover state, I also learned a lot about getting things where they need to be like the icons and the spacing between them along with the bottom border that split the creator and the time/cost.
 
 Code snippets, see below:
 
 ```html
-    <div class="container">
-      <div class="card">
-  <img src="images/image-qr-code.png" alt="QR Code">
-        <div class="text">
-  <h2 class="h2">Improve your front-end skills by building projects</h2>
-  <p class="p">Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
+<body>
+
+  <div class="card">
+
+    <div class="image">
+      <img src="images/image-equilibrium.jpg" alt="A photo" class="mainimg">
+      <div>
+        <img src="images/icon-view.svg" alt="#">
       </div>
     </div>
+
+        <h3>Equilibrium #3429</h3>
+
+      <div class="desc">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+
+      <div class="price-time">
+       <div class="price">
+        <img src="images/icon-ethereum.svg" alt="" class="icon">
+        0.041 ETH
+       </div>
+     <div class="time">
+      <img src="images/icon-clock.svg" alt=""/>
+        3 days left
+     </div>
+    </div> 
+
+     <div class="creator">
+        <img src="images/image-avatar.png" alt="" class="avi">
+         Creation of <span>Jules Wyvern</span>
+     </div>
+     </div>
+</body>
 ```
 ```css
-body {
-    background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+.image div{
+    position: absolute;
+    background-color: hsl(178, 100%, 50% );;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+}
+
+.image div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image div:hover {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
 }
 ```
-
-### Useful resources
-
-- [Padding and margin help](https://forum.freecodecamp.org/t/adding-space-between-h1-h2-h6-and-p/393073) - This helped me get the text spaced out how it needed to be.
 
 ## Author
 
