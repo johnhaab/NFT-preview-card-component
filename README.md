@@ -22,7 +22,7 @@ It has been 1 week since I started learning Frontend development, this is the se
 
 ### Links
 
-- Solution URL: [Click me!](https://your-solution-url.com)
+- Solution URL: [Click me!](https://www.frontendmentor.io/solutions/nft-preview-card-component-E8e3-FcAJY)
 - Live Site URL: [Click me!](https://johnhaab.github.io/NFT-preview-card-component/)
 
 ## My process
